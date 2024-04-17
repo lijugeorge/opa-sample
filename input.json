@@ -1,0 +1,147 @@
+{
+    "message": "world",
+    "value": 3.14,
+        "users": [
+            {
+                "id": "alice",
+                "role": "employee",
+                "country": "USA"
+            },
+            {
+                "id": "bob",
+                "role": "customer",
+                "country": "USA"
+            },
+            {
+                "id": "dora",
+                "role": "admin",
+                "country": "Sweden"
+            }
+        ],
+        "admins": [
+            {
+                "id": "charlie"
+            }
+        ],
+    "sites": [
+        {
+            "region": "east",
+            "name": "prod",
+            "servers": [
+                {
+                    "name": "web-0",
+                    "hostname": "hydrogen"
+                },
+                {
+                    "name": "web-1",
+                    "hostname": "helium"
+                },
+                {
+                    "name": "db-0",
+                    "hostname": "lithium"
+                }
+            ]
+        },
+        {
+            "region": "west",
+            "name": "smoke",
+            "servers": [
+                {
+                    "name": "web-1000",
+                    "hostname": "beryllium"
+                },
+                {
+                    "name": "web-1001",
+                    "hostname": "boron"
+                },
+                {
+                    "name": "db-1000",
+                    "hostname": "carbon"
+                }
+            ]
+        },
+        {
+            "region": "west",
+            "name": "dev",
+            "servers": [
+                {
+                    "name": "web-dev",
+                    "hostname": "nitrogen"
+                },
+                {
+                    "name": "db-dev",
+                    "hostname": "oxygen"
+                }
+            ]
+        }
+    ],
+    "servers": [
+        {
+            "id": "app",
+            "ports": [
+                "p1",
+                "p2",
+                "p3"
+            ],
+            "protocols": [
+                "https",
+                "ssh"
+            ]
+        },
+        {
+            "id": "db",
+            "ports": [
+                "p3"
+            ],
+            "protocols": [
+                "mysql"
+            ]
+        },
+        {
+            "id": "cache",
+            "ports": [
+                "p3"
+            ],
+            "protocols": [
+                "memcache"
+            ]
+        },
+        {
+            "id": "ci",
+            "ports": [
+                "p1",
+                "p2"
+            ],
+            "protocols": [
+                "http"
+            ]
+        },
+        {
+            "id": "busybox",
+            "ports": [
+                "p1"
+            ],
+            "protocols": [
+                "telnet"
+            ]
+        }
+    ],
+    "networks": [
+        {
+            "id": "net1",
+            "public": false
+        },
+        {
+            "id": "net2",
+            "public": false
+        },
+        {
+            "id": "net3",
+            "public": true
+        },
+        {
+            "id": "net4",
+            "public": true
+        }
+    ]
+}
